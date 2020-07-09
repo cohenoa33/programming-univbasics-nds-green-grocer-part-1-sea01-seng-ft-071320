@@ -35,9 +35,10 @@ def consolidate_cart(cart)
      item_name[:count] = 0
      new_cart.push(item_name)
       end 
+        i += 1 
     #binding.pry
   end
-  i += 1 
+
   new_cart
 
 end
