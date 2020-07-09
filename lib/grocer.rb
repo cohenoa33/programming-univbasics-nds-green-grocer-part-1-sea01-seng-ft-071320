@@ -12,7 +12,6 @@ def find_item_by_name_in_collection(name, collection)
     end
     i+=1
   end
-
 end
 
 def consolidate_cart(cart)
@@ -20,22 +19,7 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-<<<<<<< HEAD
- new_cart =[]
- i = 0 
- 
- while i < cart.length do 
-   new_item = cart[i]
-   if find_item_by_name_in_collection(new_item[:item], new_cart) == nil
-     new_item[:count] = 1 
-     new_cart.push(new_item)
-   else 
-     new_item[:count] += 1
-   end
-   i += 1 
- end
- new_cart
-=======
+
   i = 0 
   new_cart = []
   
@@ -55,7 +39,7 @@ def consolidate_cart(cart)
   end
   i += 1 
   new_cart
->>>>>>> 2c2b690bf41887e6d1dcdafe7092278dd7894d8f
+
 end
 
 
